@@ -21,8 +21,11 @@ def consolidate_cart(cart)
   cart.each do |cart_item_hash|
     binding.pry
     cart_item_hash.each do |cart_item_key, cart_item_value|
+      binding.pry
       receipt.each do |receipt_item_hash|
+        binding.pry
         receipt_item_hash.has_value?(cart_item_key)
+        binding.pry
         
         
       end
