@@ -24,12 +24,11 @@ def consolidate_cart(cart)
   
   
   cart.each do |cart_item_hash|
-    binding.pry
    if find_item_by_name_in_collection(cart_item_hash[:item], recipt) == nil
-     binding.pry
      cart_item_hash[:count => 1]
-     recipt << cart_item_hash
-   elsif find_item_by_name_in_collection(cart[:item], receipt)
+     receipt << cart_item_hash
+   else
+     receipt[:count] += 1
   end
 end
   
