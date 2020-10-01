@@ -18,6 +18,12 @@ def consolidate_cart(cart)
   
   receipt = []
   
+  cart.each do |cart_item_hash|
+    cart_item_hash.each do |cart_item_key, cart_item_value|
+      
+  
+  
+  receipt
 
   end
   
