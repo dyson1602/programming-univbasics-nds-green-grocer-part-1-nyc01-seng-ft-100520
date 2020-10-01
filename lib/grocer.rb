@@ -24,7 +24,7 @@ def consolidate_cart(cart)
       receipt.each do |receipt_item_hash|
         receipt_item_hash.has_value?(cart_item_key)
         
-        end
+        
       end
     end
   end
