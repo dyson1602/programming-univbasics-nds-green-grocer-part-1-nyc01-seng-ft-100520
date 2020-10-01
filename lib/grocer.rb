@@ -27,7 +27,9 @@ def consolidate_cart(cart)
    if find_item_by_name_in_collection(cart_item_hash[:item], receipt) == nil
      binding.pry
      cart_item_hash[:count => 1]
+     binding.pry
      receipt << cart_item_hash
+     binding.pry
    else
      receipt[:count] += 1
   end
