@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   
   cart.each do |cart_item_hash|
     cart_item_hash.each do |cart_item_key, cart_item_value|
-      
+      if cart_item_key[:item]
   
   
   receipt
